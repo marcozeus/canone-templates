@@ -1,0 +1,332 @@
+{
+  "version": "3.0.0",
+  "name": "Portfolio Creativo",
+  "created": "2026-05-24T10:00:00.000Z",
+  "updated": "2026-05-24T10:00:00.000Z",
+  "globalSettings": {
+    "primaryColor": "#111111",
+    "secondaryColor": "#f5f5f5",
+    "fontHeading": "'Montserrat', sans-serif",
+    "fontBody": "'Inter', sans-serif",
+    "favicon": "",
+    "tokenPrimary": "#111111",
+    "typographyBase": 16,
+    "typographyRatio": 1.414,
+    "fontPairId": null,
+    "temiSalvati": []
+  },
+  "layouts": [
+    {
+      "id": "layout-standard",
+      "nome": "Standard",
+      "zone": {
+        "header": { "components": [], "styles": {} },
+        "footer": { "components": [], "styles": {} }
+      },
+      "menu": []
+    }
+  ],
+  "cartelle": [],
+  "assets": [],
+  "ftpProfiles": [],
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "slug": "index",
+      "order": 0,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "Il Tuo Nome — Designer & Creativo",
+        "description": "Portfolio di design e creatività. Progetti che parlano da soli.",
+        "ogTitle": "Il Tuo Nome — Designer",
+        "ogDescription": "Portfolio di design e creatività.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "header",
+                "attributes": { "class": "w-full py-8 px-12 bg-transparent absolute top-0 z-50 flex justify-between items-center" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "font-black tracking-widest text-xl" }, "components": [{ "type": "text", "content": "IL TUO NOME" }] },
+                  { "tagName": "nav", "attributes": { "class": "flex gap-8 text-sm font-semibold text-gray-800" }, "components": [
+                    { "tagName": "a", "attributes": { "href": "#lavori", "class": "hover:opacity-70 transition-opacity" }, "components": [{ "type": "text", "content": "Lavori" }] },
+                    { "tagName": "a", "attributes": { "href": "chi-sono.html", "class": "hover:opacity-70 transition-opacity" }, "components": [{ "type": "text", "content": "Chi Sono" }] },
+                    { "tagName": "a", "attributes": { "href": "contatti.html", "class": "hover:opacity-70 transition-opacity" }, "components": [{ "type": "text", "content": "Contatti" }] }
+                  ]}
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "bg-gray-900 text-white min-h-screen flex items-center relative overflow-hidden" },
+                "components": [
+                  { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1600", "alt": "Studio creativo", "class": "absolute inset-0 w-full h-full object-cover opacity-30" } },
+                  { "tagName": "div", "attributes": { "class": "absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent" } },
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "relative z-10 max-w-7xl mx-auto px-12 py-32" },
+                    "components": [
+                      { "tagName": "p", "attributes": { "class": "text-primary font-bold text-sm uppercase tracking-[0.3em] mb-8" }, "components": [{ "type": "text", "content": "Designer & Art Director" }] },
+                      { "tagName": "h1", "attributes": { "class": "text-6xl md:text-8xl font-black font-heading leading-[0.9] tracking-tighter mb-10" }, "components": [{ "type": "text", "content": "Creo esperienze visive che restano impresse." }] },
+                      { "tagName": "a", "attributes": { "href": "#lavori", "class": "inline-block border-b-2 border-white font-bold text-lg pb-1 hover:border-primary hover:text-primary transition-all" }, "components": [{ "type": "text", "content": "Esplora i lavori ↓" }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "lavori", "class": "py-24 bg-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-7xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "flex items-end justify-between mb-16" }, "components": [
+                        { "tagName": "h2", "attributes": { "class": "text-5xl font-black font-heading text-gray-900" }, "components": [{ "type": "text", "content": "Lavori selezionati" }] },
+                        { "tagName": "a", "attributes": { "href": "lavori.html", "class": "text-sm font-bold border-b border-gray-300 hover:border-gray-900 transition-colors pb-1" }, "components": [{ "type": "text", "content": "Vedi tutti →" }] }
+                      ]},
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "grid grid-cols-1 md:grid-cols-12 gap-6" },
+                        "components": [
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "group md:col-span-7 relative overflow-hidden rounded-2xl aspect-[16/10] bg-gray-900 cursor-pointer" },
+                            "components": [
+                              { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1200", "alt": "Brand Identity", "class": "absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700" } },
+                              { "tagName": "div", "attributes": { "class": "absolute inset-0 p-8 flex flex-col justify-end" }, "components": [
+                                { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-2" }, "components": [{ "type": "text", "content": "Brand Identity" }] },
+                                { "tagName": "h3", "attributes": { "class": "text-3xl font-black text-white font-heading" }, "components": [{ "type": "text", "content": "Nexus Rebrand 2025" }] }
+                              ]}
+                            ]
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "md:col-span-5 flex flex-col gap-6" },
+                            "components": [
+                              {
+                                "tagName": "div",
+                                "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-900 cursor-pointer flex-1" },
+                                "components": [
+                                  { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=800", "alt": "UI Design", "class": "absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700" } },
+                                  { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                                    { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-1" }, "components": [{ "type": "text", "content": "UI/UX Design" }] },
+                                    { "tagName": "h3", "attributes": { "class": "text-xl font-black text-white font-heading" }, "components": [{ "type": "text", "content": "App Mobile Banking" }] }
+                                  ]}
+                                ]
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-100 cursor-pointer flex-1" },
+                                "components": [
+                                  { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800", "alt": "Web Design", "class": "absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700" } },
+                                  { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                                    { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-600 mb-1" }, "components": [{ "type": "text", "content": "Web Design" }] },
+                                    { "tagName": "h3", "attributes": { "class": "text-xl font-black text-gray-900 font-heading" }, "components": [{ "type": "text", "content": "E-commerce Fashion" }] }
+                                  ]}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-24 bg-gray-950 text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center" },
+                    "components": [
+                      { "tagName": "div", "components": [
+                        { "tagName": "p", "attributes": { "class": "text-primary font-bold text-sm uppercase tracking-widest mb-6" }, "components": [{ "type": "text", "content": "Un po' di me" }] },
+                        { "tagName": "h2", "attributes": { "class": "text-5xl font-black font-heading leading-tight mb-8" }, "components": [{ "type": "text", "content": "Trasformo idee complesse in esperienze semplici" }] },
+                        { "tagName": "p", "attributes": { "class": "text-gray-400 text-lg leading-relaxed mb-6" }, "components": [{ "type": "text", "content": "Sono un designer con oltre 8 anni di esperienza in brand identity, UI/UX e direzione creativa. Lavoro con startup e brand consolidati che vogliono distinguersi davvero." }] },
+                        { "tagName": "a", "attributes": { "href": "chi-sono.html", "class": "inline-block border border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white hover:text-gray-900 transition-all" }, "components": [{ "type": "text", "content": "Scopri il mio percorso →" }] }
+                      ]},
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "relative" },
+                        "components": [
+                          { "tagName": "div", "attributes": { "class": "aspect-square rounded-3xl overflow-hidden" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800", "alt": "Il tuo ritratto", "class": "w-full h-full object-cover grayscale" } }
+                          ]}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "footer",
+                "attributes": { "class": "w-full py-12 border-t border-gray-100 bg-white flex flex-col items-center justify-center gap-6" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "flex gap-8 text-sm font-bold text-gray-600" }, "components": [
+                    { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-black transition-colors" }, "components": [{ "type": "text", "content": "Instagram" }] },
+                    { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-black transition-colors" }, "components": [{ "type": "text", "content": "Dribbble" }] },
+                    { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-black transition-colors" }, "components": [{ "type": "text", "content": "LinkedIn" }] }
+                  ]},
+                  { "tagName": "p", "attributes": { "class": "text-xs text-gray-400 font-medium" }, "components": [{ "type": "text", "content": "© 2026 Il Tuo Nome. Tutti i diritti riservati." }] }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": {
+            "title": "Home — Portfolio Creativo",
+            "description": "Portfolio di design e creatività.",
+            "ogTitle": "Portfolio Creativo",
+            "ogDescription": "Designer & Art Director.",
+            "ogImage": "",
+            "canonical": "",
+            "robots": "index"
+          },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    },
+    {
+      "id": "page-lavori",
+      "name": "Lavori",
+      "slug": "lavori",
+      "order": 1,
+      "folderId": null,
+      "layoutId": null,
+      "seo": { "title": "Lavori — Portfolio Creativo", "description": "Tutti i progetti.", "ogTitle": "Lavori", "ogDescription": "I miei progetti.", "ogImage": "", "canonical": "", "robots": "index" },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "section",
+                "attributes": { "class": "pt-32 pb-24 bg-white px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-7xl mx-auto" },
+                    "components": [
+                      { "tagName": "h1", "attributes": { "class": "text-6xl font-black font-heading text-gray-900 mb-16" }, "components": [{ "type": "text", "content": "Tutti i lavori" }] },
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" },
+                        "components": [
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-gray-900 cursor-pointer" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800", "alt": "Progetto 1", "class": "absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700" } },
+                            { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                              { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-1" }, "components": [{ "type": "text", "content": "Brand Identity" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-white" }, "components": [{ "type": "text", "content": "Nexus Rebrand" }] }
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-gray-100 cursor-pointer" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&q=80&w=800", "alt": "Progetto 2", "class": "absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700" } },
+                            { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                              { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-600 mb-1" }, "components": [{ "type": "text", "content": "UI/UX" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-gray-900" }, "components": [{ "type": "text", "content": "App Banking" }] }
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-gray-900 cursor-pointer" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800", "alt": "Progetto 3", "class": "absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700" } },
+                            { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                              { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-1" }, "components": [{ "type": "text", "content": "Web Design" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-white" }, "components": [{ "type": "text", "content": "E-commerce Fashion" }] }
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-gray-100 cursor-pointer" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1626785774625-0b1c2c4eab67?auto=format&fit=crop&q=80&w=800", "alt": "Progetto 4", "class": "absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700" } },
+                            { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                              { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-600 mb-1" }, "components": [{ "type": "text", "content": "Print & Editorial" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-gray-900" }, "components": [{ "type": "text", "content": "Annual Report 2025" }] }
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-gray-900 cursor-pointer" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=800", "alt": "Progetto 5", "class": "absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700" } },
+                            { "tagName": "div", "attributes": { "class": "absolute inset-0 p-6 flex flex-col justify-end" }, "components": [
+                              { "tagName": "span", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-1" }, "components": [{ "type": "text", "content": "Motion Design" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-white" }, "components": [{ "type": "text", "content": "Campagna Social" }] }
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "group relative overflow-hidden rounded-2xl aspect-square bg-primary/10 cursor-pointer flex items-center justify-center" }, "components": [
+                            { "tagName": "div", "attributes": { "class": "text-center p-8" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "text-5xl mb-4" }, "components": [{ "type": "text", "content": "✉️" }] },
+                              { "tagName": "h3", "attributes": { "class": "text-xl font-black text-gray-900 mb-2" }, "components": [{ "type": "text", "content": "Lavoriamo insieme?" }] },
+                              { "tagName": "a", "attributes": { "href": "contatti.html", "class": "text-sm font-bold border-b border-gray-900 hover:border-primary hover:text-primary transition-all" }, "components": [{ "type": "text", "content": "Scrivimi →" }] }
+                            ]}
+                          ]}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": { "title": "Lavori — Portfolio", "description": "Tutti i miei progetti.", "ogTitle": "Lavori", "ogDescription": "I miei progetti.", "ogImage": "", "canonical": "", "robots": "index" },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    },
+    {
+      "id": "page-contatti",
+      "name": "Contatti",
+      "slug": "contatti",
+      "order": 2,
+      "folderId": null,
+      "layoutId": null,
+      "seo": { "title": "Contatti — Portfolio", "description": "Scrivimi per un progetto.", "ogTitle": "Contatti", "ogDescription": "Lavoriamo insieme.", "ogImage": "", "canonical": "", "robots": "index" },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "section",
+                "attributes": { "class": "min-h-screen bg-gray-950 text-white flex items-center px-6 py-32" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto w-full" },
+                    "components": [
+                      { "tagName": "p", "attributes": { "class": "text-primary font-bold text-sm uppercase tracking-widest mb-6" }, "components": [{ "type": "text", "content": "Parliamo" }] },
+                      { "tagName": "h1", "attributes": { "class": "text-6xl font-black font-heading leading-tight mb-12" }, "components": [{ "type": "text", "content": "Hai un progetto in mente?" }] },
+                      { "tagName": "a", "attributes": { "href": "mailto:ciao@iltuo-nome.it", "class": "text-4xl font-black font-heading text-primary hover:opacity-80 transition-opacity block mb-16" }, "components": [{ "type": "text", "content": "ciao@iltuo-nome.it" }] },
+                      { "tagName": "div", "attributes": { "class": "flex gap-8 text-sm font-bold text-gray-400" }, "components": [
+                        { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Instagram" }] },
+                        { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Dribbble" }] },
+                        { "tagName": "a", "attributes": { "href": "#", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "LinkedIn" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": { "title": "Contatti", "description": "Scrivimi.", "ogTitle": "Contatti", "ogDescription": "Lavoriamo insieme.", "ogImage": "", "canonical": "", "robots": "index" },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    }
+  ]
+}

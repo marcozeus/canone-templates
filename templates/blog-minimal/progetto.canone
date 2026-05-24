@@ -1,0 +1,259 @@
+{
+  "version": "3.0.0",
+  "name": "Blog Minimal",
+  "created": "2026-05-24T10:00:00.000Z",
+  "updated": "2026-05-24T10:00:00.000Z",
+  "globalSettings": {
+    "primaryColor": "#111111",
+    "secondaryColor": "#f8f8f8",
+    "fontHeading": "'Merriweather', serif",
+    "fontBody": "'Inter', sans-serif",
+    "favicon": "",
+    "tokenPrimary": "#111111",
+    "typographyBase": 18,
+    "typographyRatio": 1.25,
+    "fontPairId": null,
+    "temiSalvati": []
+  },
+  "layouts": [
+    {
+      "id": "layout-standard",
+      "nome": "Standard",
+      "zone": {
+        "header": { "components": [], "styles": {} },
+        "footer": { "components": [], "styles": {} }
+      },
+      "menu": []
+    }
+  ],
+  "cartelle": [],
+  "assets": [],
+  "ftpProfiles": [],
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "slug": "index",
+      "order": 0,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "Il Tuo Blog — Riflessioni su [Il Tuo Topic]",
+        "description": "Articoli, approfondimenti e riflessioni su design, tecnologia e creatività.",
+        "ogTitle": "Il Tuo Blog",
+        "ogDescription": "Riflessioni su design e creatività.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "header",
+                "attributes": { "class": "border-b border-gray-100 bg-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto px-6 py-6 flex items-center justify-between" },
+                    "components": [
+                      { "tagName": "a", "attributes": { "href": "index.html", "class": "font-heading font-bold text-xl text-gray-900" }, "components": [{ "type": "text", "content": "Il Tuo Blog" }] },
+                      { "tagName": "nav", "attributes": { "class": "flex items-center gap-8 text-sm font-medium text-gray-600" }, "components": [
+                        { "tagName": "a", "attributes": { "href": "articoli.html", "class": "hover:text-gray-900 transition-colors" }, "components": [{ "type": "text", "content": "Articoli" }] },
+                        { "tagName": "a", "attributes": { "href": "chi-sono.html", "class": "hover:text-gray-900 transition-colors" }, "components": [{ "type": "text", "content": "Chi sono" }] },
+                        { "tagName": "a", "attributes": { "href": "#newsletter", "class": "bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors" }, "components": [{ "type": "text", "content": "Newsletter" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-20 bg-white border-b border-gray-100" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "p", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-4" }, "components": [{ "type": "text", "content": "In evidenza" }] },
+                      { "tagName": "h1", "attributes": { "class": "text-4xl md:text-5xl font-heading font-bold text-gray-900 leading-tight mb-6" }, "components": [{ "type": "text", "content": "Il design minimalista non è povertà di idee: è disciplina del pensiero" }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 text-xl leading-relaxed mb-8" }, "components": [{ "type": "text", "content": "Ogni volta che aggiungiamo qualcosa, dovremmo chiederci non se funziona, ma se è necessario. Questa è la domanda che separa il design dal decorare." }] },
+                      { "tagName": "div", "attributes": { "class": "flex items-center gap-4" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "w-10 h-10 rounded-full bg-gray-200 overflow-hidden" }, "components": [
+                          { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100", "alt": "Autore", "class": "w-full h-full object-cover" } }
+                        ]},
+                        { "tagName": "div", "components": [
+                          { "tagName": "div", "attributes": { "class": "font-bold text-sm text-gray-900" }, "components": [{ "type": "text", "content": "Il Tuo Nome" }] },
+                          { "tagName": "div", "attributes": { "class": "text-xs text-gray-400" }, "components": [{ "type": "text", "content": "24 Maggio 2026 · 8 min di lettura" }] }
+                        ]}
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-16 bg-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "h2", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-10" }, "components": [{ "type": "text", "content": "Articoli recenti" }] },
+                      { "tagName": "div", "attributes": { "class": "space-y-0" }, "components": [
+                        {
+                          "tagName": "article",
+                          "attributes": { "class": "py-8 border-b border-gray-100 group cursor-pointer" },
+                          "components": [
+                            { "tagName": "div", "attributes": { "class": "flex gap-8 items-start" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "flex-1" }, "components": [
+                                { "tagName": "p", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-3" }, "components": [{ "type": "text", "content": "Design" }] },
+                                { "tagName": "h3", "attributes": { "class": "text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition-colors leading-snug" }, "components": [{ "type": "text", "content": "Tipografia: le regole che i designer ignorano (e non dovrebbero)" }] },
+                                { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "La gerarchia tipografica non si costruisce con i font, si costruisce con il contrasto. Una lezione che vale oro." }] },
+                                { "tagName": "span", "attributes": { "class": "text-xs text-gray-400" }, "components": [{ "type": "text", "content": "18 Maggio 2026 · 5 min" }] }
+                              ]},
+                              { "tagName": "div", "attributes": { "class": "w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100" }, "components": [
+                                { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=200", "alt": "Tipografia", "class": "w-full h-full object-cover" } }
+                              ]}
+                            ]}
+                          ]
+                        },
+                        {
+                          "tagName": "article",
+                          "attributes": { "class": "py-8 border-b border-gray-100 group cursor-pointer" },
+                          "components": [
+                            { "tagName": "div", "attributes": { "class": "flex gap-8 items-start" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "flex-1" }, "components": [
+                                { "tagName": "p", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-3" }, "components": [{ "type": "text", "content": "Produttività" }] },
+                                { "tagName": "h3", "attributes": { "class": "text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition-colors leading-snug" }, "components": [{ "type": "text", "content": "Come ho imparato a scrivere meglio scrivendo ogni giorno per un anno" }] },
+                                { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "365 post. 200.000 parole. Una sola lezione: la chiarezza si allena, non si eredita." }] },
+                                { "tagName": "span", "attributes": { "class": "text-xs text-gray-400" }, "components": [{ "type": "text", "content": "10 Maggio 2026 · 7 min" }] }
+                              ]},
+                              { "tagName": "div", "attributes": { "class": "w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100" }, "components": [
+                                { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=200", "alt": "Scrittura", "class": "w-full h-full object-cover" } }
+                              ]}
+                            ]}
+                          ]
+                        },
+                        {
+                          "tagName": "article",
+                          "attributes": { "class": "py-8 border-b border-gray-100 group cursor-pointer" },
+                          "components": [
+                            { "tagName": "div", "attributes": { "class": "flex gap-8 items-start" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "flex-1" }, "components": [
+                                { "tagName": "p", "attributes": { "class": "text-xs font-bold uppercase tracking-widest text-gray-400 mb-3" }, "components": [{ "type": "text", "content": "Tecnologia" }] },
+                                { "tagName": "h3", "attributes": { "class": "text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition-colors leading-snug" }, "components": [{ "type": "text", "content": "AI e creatività: strumento o sostituto?" }] },
+                                { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "Non si tratta di scegliere tra umano e macchina. Si tratta di capire dove finisce l'uno e inizia l'altro." }] },
+                                { "tagName": "span", "attributes": { "class": "text-xs text-gray-400" }, "components": [{ "type": "text", "content": "2 Maggio 2026 · 6 min" }] }
+                              ]},
+                              { "tagName": "div", "attributes": { "class": "w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100" }, "components": [
+                                { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&q=80&w=200", "alt": "AI", "class": "w-full h-full object-cover" } }
+                              ]}
+                            ]}
+                          ]
+                        }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "newsletter", "class": "py-20 bg-gray-950 text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-2xl mx-auto px-6 text-center" },
+                    "components": [
+                      { "tagName": "h2", "attributes": { "class": "text-3xl font-heading font-bold mb-4" }, "components": [{ "type": "text", "content": "Ricevi i nuovi articoli ogni settimana" }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-400 mb-10" }, "components": [{ "type": "text", "content": "Niente spam. Solo riflessioni su design, tecnologia e creatività. Quando ho qualcosa da dire." }] },
+                      { "tagName": "form", "attributes": { "class": "flex gap-3 max-w-md mx-auto" }, "components": [
+                        { "tagName": "input", "attributes": { "type": "email", "placeholder": "La tua email", "class": "flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white transition-colors" } },
+                        { "tagName": "button", "attributes": { "type": "submit", "class": "bg-white text-gray-900 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap text-sm" }, "components": [{ "type": "text", "content": "Iscriviti" }] }
+                      ]},
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 text-xs mt-4" }, "components": [{ "type": "text", "content": "Già 1.200 lettori. Cancellazione in un click." }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "footer",
+                "attributes": { "class": "py-12 border-t border-gray-100 bg-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "font-heading font-bold text-gray-900" }, "components": [{ "type": "text", "content": "Il Tuo Blog" }] },
+                      { "tagName": "div", "attributes": { "class": "flex gap-6 text-sm text-gray-500" }, "components": [
+                        { "tagName": "a", "attributes": { "href": "articoli.html", "class": "hover:text-gray-900 transition-colors" }, "components": [{ "type": "text", "content": "Articoli" }] },
+                        { "tagName": "a", "attributes": { "href": "chi-sono.html", "class": "hover:text-gray-900 transition-colors" }, "components": [{ "type": "text", "content": "Chi sono" }] },
+                        { "tagName": "a", "attributes": { "href": "#newsletter", "class": "hover:text-gray-900 transition-colors" }, "components": [{ "type": "text", "content": "Newsletter" }] }
+                      ]},
+                      { "tagName": "p", "attributes": { "class": "text-xs text-gray-400" }, "components": [{ "type": "text", "content": "© 2026 Il Tuo Nome" }] }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": { "title": "Home — Il Tuo Blog", "description": "Riflessioni su design e creatività.", "ogTitle": "Il Tuo Blog", "ogDescription": "Riflessioni su design e creatività.", "ogImage": "", "canonical": "", "robots": "index" },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    },
+    {
+      "id": "page-chi-sono",
+      "name": "Chi Sono",
+      "slug": "chi-sono",
+      "order": 1,
+      "folderId": null,
+      "layoutId": null,
+      "seo": { "title": "Chi Sono — Il Tuo Blog", "description": "La mia storia.", "ogTitle": "Chi Sono", "ogDescription": "La mia storia.", "ogImage": "", "canonical": "", "robots": "index" },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "section",
+                "attributes": { "class": "pt-20 pb-24 bg-white px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "w-24 h-24 rounded-full overflow-hidden mb-10" }, "components": [
+                        { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200", "alt": "Il Tuo Nome", "class": "w-full h-full object-cover" } }
+                      ]},
+                      { "tagName": "h1", "attributes": { "class": "text-4xl font-heading font-bold text-gray-900 mb-6" }, "components": [{ "type": "text", "content": "Ciao, sono Il Tuo Nome" }] },
+                      { "tagName": "p", "attributes": { "class": "text-xl text-gray-600 leading-relaxed mb-6" }, "components": [{ "type": "text", "content": "Scrivo di design, tecnologia e di come queste cose si intersecano con il modo in cui pensiamo e creiamo. Da 10 anni." }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 leading-relaxed mb-6" }, "components": [{ "type": "text", "content": "Di giorno lavoro come [il tuo ruolo]. Di sera — e spesso la mattina molto presto — scrivo quello che imparo, quello che sbaglio e quello che mi fa ancora sorridere dopo anni." }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 leading-relaxed mb-12" }, "components": [{ "type": "text", "content": "Se vuoi parlare, scrivimi a ciao@iltuo-nome.it. Se vuoi ricevere i nuovi articoli, iscriviti alla newsletter qui sotto." }] },
+                      { "tagName": "form", "attributes": { "class": "flex gap-3 max-w-md" }, "components": [
+                        { "tagName": "input", "attributes": { "type": "email", "placeholder": "La tua email", "class": "flex-1 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-gray-900 transition-colors" } },
+                        { "tagName": "button", "attributes": { "type": "submit", "class": "bg-gray-900 text-white font-bold px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors text-sm" }, "components": [{ "type": "text", "content": "Iscriviti" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": { "title": "Chi Sono", "description": "La mia storia.", "ogTitle": "Chi Sono", "ogDescription": "La mia storia.", "ogImage": "", "canonical": "", "robots": "index" },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "version": "3.0.0",
+  "name": "Landing Conversion",
+  "created": "2026-05-24T10:00:00.000Z",
+  "updated": "2026-05-24T10:00:00.000Z",
+  "globalSettings": {
+    "primaryColor": "#6366f1",
+    "secondaryColor": "#0f0f1a",
+    "fontHeading": "'Montserrat', sans-serif",
+    "fontBody": "'Inter', sans-serif",
+    "favicon": "",
+    "tokenPrimary": "#6366f1",
+    "typographyBase": 16,
+    "typographyRatio": 1.333,
+    "fontPairId": null,
+    "temiSalvati": []
+  },
+  "layouts": [
+    {
+      "id": "layout-standard",
+      "nome": "Standard",
+      "zone": {
+        "header": { "components": [], "styles": {} },
+        "footer": { "components": [], "styles": {} }
+      },
+      "menu": []
+    }
+  ],
+  "cartelle": [],
+  "assets": [],
+  "ftpProfiles": [],
+  "pages": [
+    {
+      "id": "page-landing",
+      "name": "Landing",
+      "slug": "index",
+      "order": 0,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "Il Tuo Prodotto — Risolvi [Il Problema] Una Volta Per Tutte",
+        "description": "La soluzione definitiva per [il tuo target]. Prova gratis per 14 giorni.",
+        "ogTitle": "Il Tuo Prodotto",
+        "ogDescription": "La soluzione definitiva. Prova gratis.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "nav",
+                "attributes": { "class": "fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-white/5 px-6 py-4 flex items-center justify-between" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "font-black text-white text-lg tracking-tighter" }, "components": [{ "type": "text", "content": "PRODOTTO" }] },
+                  { "tagName": "div", "attributes": { "class": "flex items-center gap-6" }, "components": [
+                    { "tagName": "a", "attributes": { "href": "#features", "class": "text-gray-400 text-sm font-medium hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Funzionalità" }] },
+                    { "tagName": "a", "attributes": { "href": "#prezzi", "class": "text-gray-400 text-sm font-medium hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Prezzi" }] },
+                    { "tagName": "a", "attributes": { "href": "#cta", "class": "bg-primary text-white text-sm font-bold px-5 py-2 rounded-lg hover:opacity-90 transition-opacity" }, "components": [{ "type": "text", "content": "Inizia gratis" }] }
+                  ]}
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "bg-gray-950 text-white min-h-screen flex items-center pt-20 relative overflow-hidden" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "absolute inset-0 pointer-events-none" }, "components": [
+                    { "tagName": "div", "attributes": { "class": "absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px]" } }
+                  ]},
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-5xl mx-auto px-6 py-20 text-center relative z-10" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8" }, "components": [
+                        { "tagName": "span", "attributes": { "class": "w-2 h-2 bg-green-400 rounded-full" } },
+                        { "tagName": "span", "attributes": { "class": "text-xs font-bold text-gray-300 uppercase tracking-widest" }, "components": [{ "type": "text", "content": "Oltre 5.000 aziende già attive" }] }
+                      ]},
+                      { "tagName": "h1", "attributes": { "class": "text-5xl md:text-7xl font-black font-heading leading-tight mb-8" }, "components": [{ "type": "text", "content": "Smetti di perdere tempo.\nInizia a crescere." }] },
+                      { "tagName": "p", "attributes": { "class": "text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed" }, "components": [{ "type": "text", "content": "Il nostro strumento automatizza i task ripetitivi e ti lascia concentrare su quello che conta davvero: far crescere il tuo business." }] },
+                      { "tagName": "div", "attributes": { "class": "flex flex-col sm:flex-row gap-4 justify-center items-center" }, "components": [
+                        { "tagName": "a", "attributes": { "href": "#prezzi", "class": "bg-primary text-white font-bold px-10 py-5 rounded-xl text-lg hover:opacity-90 transition-opacity shadow-[0_0_40px_rgba(99,102,241,0.4)]" }, "components": [{ "type": "text", "content": "Prova gratis 14 giorni" }] },
+                        { "tagName": "a", "attributes": { "href": "#features", "class": "text-gray-400 font-medium hover:text-white transition-colors text-sm" }, "components": [{ "type": "text", "content": "Nessuna carta di credito richiesta →" }] }
+                      ]},
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "mt-20 relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl max-w-4xl mx-auto" },
+                        "components": [
+                          { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200", "alt": "Dashboard prodotto", "class": "w-full object-cover" } },
+                          { "tagName": "div", "attributes": { "class": "absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent" } }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-16 bg-gray-900 border-y border-white/5" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "p", "attributes": { "class": "text-center text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-10" }, "components": [{ "type": "text", "content": "Scelto dai team più veloci" }] },
+                      { "tagName": "div", "attributes": { "class": "flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "text-xl font-black italic tracking-tighter text-white hover:opacity-100 transition-opacity" }, "components": [{ "type": "text", "content": "AZIENDA" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xl font-black italic tracking-tighter text-white hover:opacity-100 transition-opacity" }, "components": [{ "type": "text", "content": "STARTUP" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xl font-black italic tracking-tighter text-white hover:opacity-100 transition-opacity" }, "components": [{ "type": "text", "content": "BRAND" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xl font-black italic tracking-tighter text-white hover:opacity-100 transition-opacity" }, "components": [{ "type": "text", "content": "STUDIO" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "features", "class": "py-24 bg-gray-950 text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "text-center mb-20" }, "components": [
+                        { "tagName": "h2", "attributes": { "class": "text-4xl font-black font-heading mb-4" }, "components": [{ "type": "text", "content": "Tutto quello che ti serve, niente di superfluo" }] },
+                        { "tagName": "p", "attributes": { "class": "text-gray-400 text-lg max-w-xl mx-auto" }, "components": [{ "type": "text", "content": "Ogni funzione è stata progettata per ridurre il lavoro, non per aggiungere complessità." }] }
+                      ]},
+                      { "tagName": "div", "attributes": { "class": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-primary/50 transition-colors" }, "components": [
+                          { "tagName": "div", "attributes": { "class": "w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-2xl mb-6" }, "components": [{ "type": "text", "content": "⚡" }] },
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-3" }, "components": [{ "type": "text", "content": "Automazione intelligente" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm leading-relaxed" }, "components": [{ "type": "text", "content": "Imposta le regole una volta, lascia che il sistema lavori per te 24 ore su 24." }] }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-primary/50 transition-colors" }, "components": [
+                          { "tagName": "div", "attributes": { "class": "w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-2xl mb-6" }, "components": [{ "type": "text", "content": "📊" }] },
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-3" }, "components": [{ "type": "text", "content": "Analytics in tempo reale" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm leading-relaxed" }, "components": [{ "type": "text", "content": "Monitora performance, conversioni e comportamenti con dashboard intuitive." }] }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "p-8 bg-white/5 border border-white/10 rounded-2xl hover:border-primary/50 transition-colors" }, "components": [
+                          { "tagName": "div", "attributes": { "class": "w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-2xl mb-6" }, "components": [{ "type": "text", "content": "🔗" }] },
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-3" }, "components": [{ "type": "text", "content": "Integrazioni native" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm leading-relaxed" }, "components": [{ "type": "text", "content": "Si connette ai tuoi strumenti preferiti: Slack, Notion, HubSpot e altri 200+." }] }
+                        ]}
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "prezzi", "class": "py-24 bg-gray-900 text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-5xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "text-center mb-16" }, "components": [
+                        { "tagName": "h2", "attributes": { "class": "text-4xl font-black font-heading mb-4" }, "components": [{ "type": "text", "content": "Prezzi chiari, senza sorprese" }] },
+                        { "tagName": "p", "attributes": { "class": "text-gray-400 text-lg" }, "components": [{ "type": "text", "content": "Inizia gratis, poi cresci quando sei pronto." }] }
+                      ]},
+                      { "tagName": "div", "attributes": { "class": "grid grid-cols-1 md:grid-cols-3 gap-8" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "bg-white/5 border border-white/10 rounded-2xl p-8" }, "components": [
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-1" }, "components": [{ "type": "text", "content": "Starter" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm mb-6" }, "components": [{ "type": "text", "content": "Per chi inizia" }] },
+                          { "tagName": "div", "attributes": { "class": "text-4xl font-black mb-8" }, "components": [{ "type": "text", "content": "€0" }, { "tagName": "span", "attributes": { "class": "text-lg font-normal text-gray-400" }, "components": [{ "type": "text", "content": "/mese" }] }] },
+                          { "tagName": "ul", "attributes": { "class": "space-y-3 text-sm text-gray-400 mb-8" }, "components": [
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-green-400" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "3 automazioni attive" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-green-400" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "1.000 esecuzioni/mese" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-gray-600" }, "components": [{ "type": "text", "content": "✗" }] }, { "type": "text", "content": "Analytics avanzate" }] }
+                          ]},
+                          { "tagName": "a", "attributes": { "href": "#cta", "class": "block text-center border border-white/20 font-bold py-3 rounded-xl hover:border-primary hover:text-primary transition-colors text-sm" }, "components": [{ "type": "text", "content": "Inizia gratis" }] }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "bg-primary/10 border-2 border-primary rounded-2xl p-8 relative scale-105 z-10" }, "components": [
+                          { "tagName": "span", "attributes": { "class": "absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full" }, "components": [{ "type": "text", "content": "Più popolare" }] },
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-1" }, "components": [{ "type": "text", "content": "Pro" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm mb-6" }, "components": [{ "type": "text", "content": "Per team in crescita" }] },
+                          { "tagName": "div", "attributes": { "class": "text-4xl font-black mb-8" }, "components": [{ "type": "text", "content": "€39" }, { "tagName": "span", "attributes": { "class": "text-lg font-normal text-gray-400" }, "components": [{ "type": "text", "content": "/mese" }] }] },
+                          { "tagName": "ul", "attributes": { "class": "space-y-3 text-sm text-gray-300 mb-8" }, "components": [
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-primary" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "Automazioni illimitate" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-primary" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "50.000 esecuzioni/mese" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-primary" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "Analytics avanzate" }] }
+                          ]},
+                          { "tagName": "a", "attributes": { "href": "#cta", "class": "block text-center bg-primary font-bold py-3 rounded-xl hover:opacity-90 transition-opacity text-sm" }, "components": [{ "type": "text", "content": "Prova 14 giorni gratis" }] }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "bg-white/5 border border-white/10 rounded-2xl p-8" }, "components": [
+                          { "tagName": "h3", "attributes": { "class": "font-bold text-lg mb-1" }, "components": [{ "type": "text", "content": "Enterprise" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-400 text-sm mb-6" }, "components": [{ "type": "text", "content": "Per grandi team" }] },
+                          { "tagName": "div", "attributes": { "class": "text-4xl font-black mb-8" }, "components": [{ "type": "text", "content": "€99" }, { "tagName": "span", "attributes": { "class": "text-lg font-normal text-gray-400" }, "components": [{ "type": "text", "content": "/mese" }] }] },
+                          { "tagName": "ul", "attributes": { "class": "space-y-3 text-sm text-gray-400 mb-8" }, "components": [
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-green-400" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "Tutto di Pro" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-green-400" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "SLA garantito" }] },
+                            { "tagName": "li", "attributes": { "class": "flex gap-2" }, "components": [{ "tagName": "span", "attributes": { "class": "text-green-400" }, "components": [{ "type": "text", "content": "✓" }] }, { "type": "text", "content": "Onboarding dedicato" }] }
+                          ]},
+                          { "tagName": "a", "attributes": { "href": "#cta", "class": "block text-center border border-white/20 font-bold py-3 rounded-xl hover:border-primary hover:text-primary transition-colors text-sm" }, "components": [{ "type": "text", "content": "Parla con noi" }] }
+                        ]}
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "cta", "class": "py-32 bg-gray-950 text-white text-center relative overflow-hidden" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "absolute inset-0 pointer-events-none" }, "components": [
+                    { "tagName": "div", "attributes": { "class": "absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/15 rounded-full blur-[100px]" } }
+                  ]},
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto px-6 relative z-10" },
+                    "components": [
+                      { "tagName": "h2", "attributes": { "class": "text-5xl md:text-6xl font-black font-heading mb-8" }, "components": [{ "type": "text", "content": "Inizia oggi. Gratis." }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-400 text-xl mb-12" }, "components": [{ "type": "text", "content": "14 giorni senza limiti. Nessuna carta di credito. Cancelli quando vuoi." }] },
+                      { "tagName": "form", "attributes": { "class": "flex flex-col sm:flex-row gap-4 max-w-md mx-auto" }, "components": [
+                        { "tagName": "input", "attributes": { "type": "email", "placeholder": "La tua email aziendale", "class": "flex-1 bg-white/10 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors text-sm" } },
+                        { "tagName": "button", "attributes": { "type": "submit", "class": "bg-primary text-white font-bold px-8 py-4 rounded-xl hover:opacity-90 transition-opacity whitespace-nowrap" }, "components": [{ "type": "text", "content": "Inizia gratis →" }] }
+                      ]},
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 text-xs mt-6" }, "components": [{ "type": "text", "content": "Unisciti a 5.000+ aziende che hanno già scelto di crescere più veloce." }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "footer",
+                "attributes": { "class": "bg-gray-950 border-t border-white/5 py-8 px-6 text-center" },
+                "components": [
+                  { "tagName": "p", "attributes": { "class": "text-gray-600 text-xs" }, "components": [{ "type": "text", "content": "© 2026 Prodotto SRL. Privacy Policy · Termini di Servizio" }] }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": {
+            "title": "Landing — Il Tuo Prodotto",
+            "description": "Prova gratis 14 giorni.",
+            "ogTitle": "Il Tuo Prodotto",
+            "ogDescription": "Prova gratis 14 giorni.",
+            "ogImage": "",
+            "canonical": "",
+            "robots": "index"
+          },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    }
+  ]
+}

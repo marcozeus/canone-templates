@@ -1,0 +1,416 @@
+{
+  "version": "3.0.0",
+  "name": "Business Starter",
+  "created": "2026-05-24T10:00:00.000Z",
+  "updated": "2026-05-24T10:00:00.000Z",
+  "globalSettings": {
+    "primaryColor": "#C9A84C",
+    "secondaryColor": "#1a1a2e",
+    "fontHeading": "'Montserrat', sans-serif",
+    "fontBody": "'Inter', sans-serif",
+    "favicon": "",
+    "tokenPrimary": "#C9A84C",
+    "typographyBase": 16,
+    "typographyRatio": 1.333,
+    "fontPairId": null,
+    "temiSalvati": []
+  },
+  "layouts": [
+    {
+      "id": "layout-standard",
+      "nome": "Standard",
+      "zone": {
+        "header": { "components": [], "styles": {} },
+        "footer": { "components": [], "styles": {} }
+      },
+      "menu": []
+    }
+  ],
+  "cartelle": [],
+  "assets": [],
+  "ftpProfiles": [],
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "slug": "index",
+      "order": 0,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "La Tua Azienda — Soluzioni Professionali",
+        "description": "Offriamo soluzioni su misura per far crescere il tuo business. Scopri i nostri servizi.",
+        "ogTitle": "La Tua Azienda — Soluzioni Professionali",
+        "ogDescription": "Offriamo soluzioni su misura per far crescere il tuo business.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "header",
+                "attributes": { "class": "fixed top-4 left-0 right-0 z-50 px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl py-3 px-6 flex items-center justify-between" },
+                    "components": [
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "flex items-center gap-2 font-black text-lg tracking-tighter" },
+                        "components": [
+                          { "tagName": "div", "attributes": { "class": "w-7 h-7 bg-primary rounded-lg flex items-center justify-center text-white text-xs" }, "components": [{ "type": "text", "content": "A" }] },
+                          { "type": "text", "content": "LA TUA AZIENDA" }
+                        ]
+                      },
+                      {
+                        "tagName": "nav",
+                        "attributes": { "class": "hidden md:flex items-center gap-6 text-xs font-bold text-gray-800" },
+                        "components": [
+                          { "tagName": "a", "attributes": { "href": "#servizi", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "Servizi" }] },
+                          { "tagName": "a", "attributes": { "href": "#chi-siamo", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "Chi Siamo" }] },
+                          { "tagName": "a", "attributes": { "href": "contatti.html", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "Contatti" }] }
+                        ]
+                      },
+                      { "tagName": "a", "attributes": { "href": "contatti.html", "class": "bg-primary text-gray-900 px-4 py-2 rounded-xl text-xs font-bold hover:shadow-md transition-all" }, "components": [{ "type": "text", "content": "Contattaci" }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "bg-gray-900 text-white min-h-[90vh] flex items-center relative overflow-hidden" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary blur-[150px] rounded-full" } }
+                    ]
+                  },
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto px-6 py-32 relative z-10 text-center" },
+                    "components": [
+                      { "tagName": "span", "attributes": { "class": "inline-block bg-primary/20 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest" }, "components": [{ "type": "text", "content": "Soluzioni per il tuo business" }] },
+                      { "tagName": "h1", "attributes": { "class": "text-5xl md:text-7xl font-black font-heading leading-tight mb-6" }, "components": [{ "type": "text", "content": "Costruiamo il tuo successo digitale" }] },
+                      { "tagName": "p", "attributes": { "class": "text-lg text-gray-400 font-body max-w-2xl mx-auto mb-10" }, "components": [{ "type": "text", "content": "Consulenza strategica, sviluppo e supporto continuativo per far crescere la tua azienda nel mercato di oggi." }] },
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "flex flex-col sm:flex-row gap-4 justify-center" },
+                        "components": [
+                          { "tagName": "a", "attributes": { "href": "contatti.html", "class": "bg-primary text-gray-900 font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-sm" }, "components": [{ "type": "text", "content": "Richiedi un preventivo" }] },
+                          { "tagName": "a", "attributes": { "href": "#servizi", "class": "border border-gray-700 text-white font-semibold px-8 py-4 rounded-lg hover:border-gray-500 transition-colors text-sm" }, "components": [{ "type": "text", "content": "Scopri i servizi" }] }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "servizi", "class": "py-24 bg-gray-50" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto px-6" },
+                    "components": [
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "text-center mb-16" },
+                        "components": [
+                          { "tagName": "h2", "attributes": { "class": "text-4xl font-black font-heading text-gray-900 mb-3" }, "components": [{ "type": "text", "content": "I nostri servizi" }] },
+                          { "tagName": "div", "attributes": { "class": "w-12 h-1 bg-primary mx-auto rounded-full" } },
+                          { "tagName": "p", "attributes": { "class": "mt-6 text-gray-500 font-body text-lg max-w-2xl mx-auto" }, "components": [{ "type": "text", "content": "Ogni servizio è progettato per portare risultati concreti e misurabili alla tua azienda." }] }
+                        ]
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "grid grid-cols-1 md:grid-cols-3 gap-8" },
+                        "components": [
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow" },
+                            "components": [
+                              { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800", "alt": "Consulenza strategica", "class": "w-full h-48 object-cover" } },
+                              {
+                                "tagName": "div",
+                                "attributes": { "class": "p-6" },
+                                "components": [
+                                  { "tagName": "h3", "attributes": { "class": "text-xl font-bold font-heading text-gray-900 mb-2" }, "components": [{ "type": "text", "content": "Consulenza Strategica" }] },
+                                  { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "Analizziamo il tuo mercato e definiamo una roadmap chiara per raggiungere i tuoi obiettivi di crescita." }] },
+                                  { "tagName": "a", "attributes": { "href": "contatti.html", "class": "text-primary font-semibold text-sm hover:opacity-80 transition-opacity" }, "components": [{ "type": "text", "content": "Scopri di più →" }] }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow" },
+                            "components": [
+                              { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800", "alt": "Sviluppo digitale", "class": "w-full h-48 object-cover" } },
+                              {
+                                "tagName": "div",
+                                "attributes": { "class": "p-6" },
+                                "components": [
+                                  { "tagName": "h3", "attributes": { "class": "text-xl font-bold font-heading text-gray-900 mb-2" }, "components": [{ "type": "text", "content": "Sviluppo Digitale" }] },
+                                  { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "Siti web, applicazioni e strumenti digitali che lavorano per te 24 ore su 24, 7 giorni su 7." }] },
+                                  { "tagName": "a", "attributes": { "href": "contatti.html", "class": "text-primary font-semibold text-sm hover:opacity-80 transition-opacity" }, "components": [{ "type": "text", "content": "Scopri di più →" }] }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow" },
+                            "components": [
+                              { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800", "alt": "Supporto continuativo", "class": "w-full h-48 object-cover" } },
+                              {
+                                "tagName": "div",
+                                "attributes": { "class": "p-6" },
+                                "components": [
+                                  { "tagName": "h3", "attributes": { "class": "text-xl font-bold font-heading text-gray-900 mb-2" }, "components": [{ "type": "text", "content": "Supporto Continuativo" }] },
+                                  { "tagName": "p", "attributes": { "class": "text-gray-500 text-sm leading-relaxed mb-4" }, "components": [{ "type": "text", "content": "Un partner affidabile sempre al tuo fianco per manutenzione, aggiornamenti e ottimizzazioni." }] },
+                                  { "tagName": "a", "attributes": { "href": "contatti.html", "class": "text-primary font-semibold text-sm hover:opacity-80 transition-opacity" }, "components": [{ "type": "text", "content": "Scopri di più →" }] }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-20 bg-gray-900 text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center" },
+                    "components": [
+                      { "tagName": "div", "components": [{ "tagName": "div", "attributes": { "class": "text-4xl md:text-5xl font-black font-heading text-primary mb-2" }, "components": [{ "type": "text", "content": "150+" }] }, { "tagName": "div", "attributes": { "class": "text-gray-400 font-semibold uppercase tracking-wider text-sm" }, "components": [{ "type": "text", "content": "Clienti soddisfatti" }] }] },
+                      { "tagName": "div", "components": [{ "tagName": "div", "attributes": { "class": "text-4xl md:text-5xl font-black font-heading text-primary mb-2" }, "components": [{ "type": "text", "content": "98%" }] }, { "tagName": "div", "attributes": { "class": "text-gray-400 font-semibold uppercase tracking-wider text-sm" }, "components": [{ "type": "text", "content": "Tasso di rinnovo" }] }] },
+                      { "tagName": "div", "components": [{ "tagName": "div", "attributes": { "class": "text-4xl md:text-5xl font-black font-heading text-primary mb-2" }, "components": [{ "type": "text", "content": "10+" }] }, { "tagName": "div", "attributes": { "class": "text-gray-400 font-semibold uppercase tracking-wider text-sm" }, "components": [{ "type": "text", "content": "Anni di esperienza" }] }] },
+                      { "tagName": "div", "components": [{ "tagName": "div", "attributes": { "class": "text-4xl md:text-5xl font-black font-heading text-primary mb-2" }, "components": [{ "type": "text", "content": "24/7" }] }, { "tagName": "div", "attributes": { "class": "text-gray-400 font-semibold uppercase tracking-wider text-sm" }, "components": [{ "type": "text", "content": "Supporto attivo" }] }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "chi-siamo", "class": "py-24 bg-white overflow-hidden" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center" },
+                    "components": [
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "relative" },
+                        "components": [
+                          { "tagName": "div", "attributes": { "class": "absolute -top-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" } },
+                          { "tagName": "div", "attributes": { "class": "relative rounded-3xl overflow-hidden shadow-2xl aspect-square bg-gray-100" }, "components": [
+                            { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800", "alt": "Il nostro team", "class": "w-full h-full object-cover" } }
+                          ]}
+                        ]
+                      },
+                      {
+                        "tagName": "div",
+                        "components": [
+                          { "tagName": "span", "attributes": { "class": "bg-primary/10 text-primary text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest mb-6 inline-block" }, "components": [{ "type": "text", "content": "Chi siamo" }] },
+                          { "tagName": "h2", "attributes": { "class": "text-4xl md:text-5xl font-black font-heading text-gray-900 leading-tight mb-8" }, "components": [{ "type": "text", "content": "Un team di professionisti al tuo servizio" }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-500 text-lg mb-6 leading-relaxed" }, "components": [{ "type": "text", "content": "Da oltre 10 anni aiutiamo aziende di ogni dimensione a crescere, innovare e distinguersi nel mercato. La nostra forza è la combinazione di esperienza strategica e competenze tecniche." }] },
+                          { "tagName": "p", "attributes": { "class": "text-gray-500 text-lg mb-10 leading-relaxed" }, "components": [{ "type": "text", "content": "Crediamo che ogni progetto meriti la massima attenzione e un approccio su misura, non soluzioni preconfezionate." }] },
+                          { "tagName": "a", "attributes": { "href": "contatti.html", "class": "inline-block bg-gray-900 text-white font-bold px-8 py-4 rounded-xl hover:bg-gray-700 transition-colors" }, "components": [{ "type": "text", "content": "Parliamo del tuo progetto →" }] }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "py-20 bg-gray-50" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-4xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "text-center mb-14" }, "components": [
+                        { "tagName": "h2", "attributes": { "class": "text-4xl font-black font-heading text-gray-900 mb-3" }, "components": [{ "type": "text", "content": "Cosa dicono di noi" }] },
+                        { "tagName": "div", "attributes": { "class": "w-12 h-1 bg-primary mx-auto rounded-full" } }
+                      ]},
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "grid grid-cols-1 md:grid-cols-2 gap-8" },
+                        "components": [
+                          { "tagName": "div", "attributes": { "class": "bg-white rounded-xl p-8 shadow-sm" }, "components": [
+                            { "tagName": "p", "attributes": { "class": "text-gray-600 text-lg leading-relaxed mb-6 italic" }, "components": [{ "type": "text", "content": "\"Un partner eccezionale. Hanno capito subito le nostre esigenze e ci hanno guidato verso risultati che non pensavamo possibili in così poco tempo.\"" }] },
+                            { "tagName": "div", "attributes": { "class": "flex items-center gap-4" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg" }, "components": [{ "type": "text", "content": "M" }] },
+                              { "tagName": "div", "components": [
+                                { "tagName": "div", "attributes": { "class": "font-bold font-heading text-gray-900" }, "components": [{ "type": "text", "content": "Marco Ferretti" }] },
+                                { "tagName": "div", "attributes": { "class": "text-sm text-gray-500" }, "components": [{ "type": "text", "content": "CEO, Ferretti Group" }] }
+                              ]}
+                            ]}
+                          ]},
+                          { "tagName": "div", "attributes": { "class": "bg-white rounded-xl p-8 shadow-sm" }, "components": [
+                            { "tagName": "p", "attributes": { "class": "text-gray-600 text-lg leading-relaxed mb-6 italic" }, "components": [{ "type": "text", "content": "\"Professionalità, puntualità e risultati concreti. Il sito che hanno realizzato ha aumentato le nostre conversioni del 40% nel primo mese.\"" }] },
+                            { "tagName": "div", "attributes": { "class": "flex items-center gap-4" }, "components": [
+                              { "tagName": "div", "attributes": { "class": "w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-lg" }, "components": [{ "type": "text", "content": "L" }] },
+                              { "tagName": "div", "components": [
+                                { "tagName": "div", "attributes": { "class": "font-bold font-heading text-gray-900" }, "components": [{ "type": "text", "content": "Laura Conti" }] },
+                                { "tagName": "div", "attributes": { "class": "text-sm text-gray-500" }, "components": [{ "type": "text", "content": "Marketing Director, Conti SRL" }] }
+                              ]}
+                            ]}
+                          ]}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "bg-primary py-20" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-4xl mx-auto px-6 text-center" },
+                    "components": [
+                      { "tagName": "h2", "attributes": { "class": "text-4xl font-black font-heading text-gray-900 mb-4" }, "components": [{ "type": "text", "content": "Pronto a far crescere la tua azienda?" }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-800 font-body text-lg mb-8" }, "components": [{ "type": "text", "content": "Scrivici oggi: la prima consulenza è gratuita e senza impegno." }] },
+                      { "tagName": "a", "attributes": { "href": "contatti.html", "class": "inline-block bg-gray-900 text-white font-bold px-8 py-4 rounded-lg hover:bg-gray-700 transition-colors" }, "components": [{ "type": "text", "content": "Contattaci ora" }] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "footer",
+                "attributes": { "class": "bg-gray-950 text-white py-12 px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "font-black text-xl tracking-tighter" }, "components": [{ "type": "text", "content": "LA TUA AZIENDA" }] },
+                      { "tagName": "div", "attributes": { "class": "flex gap-8 text-sm font-bold text-gray-400" }, "components": [
+                        { "tagName": "a", "attributes": { "href": "index.html", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Home" }] },
+                        { "tagName": "a", "attributes": { "href": "#servizi", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Servizi" }] },
+                        { "tagName": "a", "attributes": { "href": "contatti.html", "class": "hover:text-white transition-colors" }, "components": [{ "type": "text", "content": "Contatti" }] }
+                      ]},
+                      { "tagName": "p", "attributes": { "class": "text-gray-600 text-xs" }, "components": [{ "type": "text", "content": "© 2026 La Tua Azienda. Tutti i diritti riservati." }] }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": {
+            "title": "Home — La Tua Azienda",
+            "description": "Soluzioni professionali per far crescere il tuo business.",
+            "ogTitle": "La Tua Azienda",
+            "ogDescription": "Consulenza, sviluppo e supporto per il tuo business.",
+            "ogImage": "",
+            "canonical": "",
+            "robots": "index"
+          },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    },
+    {
+      "id": "page-contatti",
+      "name": "Contatti",
+      "slug": "contatti",
+      "order": 1,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "Contatti — La Tua Azienda",
+        "description": "Contattaci per una consulenza gratuita. Siamo qui per aiutarti.",
+        "ogTitle": "Contatti — La Tua Azienda",
+        "ogDescription": "Scrivici per una consulenza gratuita.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "section",
+                "attributes": { "class": "min-h-screen bg-gray-50 pt-32 pb-20 px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-3xl mx-auto" },
+                    "components": [
+                      { "tagName": "h1", "attributes": { "class": "text-5xl font-black font-heading text-gray-900 mb-4" }, "components": [{ "type": "text", "content": "Parliamo del tuo progetto" }] },
+                      { "tagName": "p", "attributes": { "class": "text-gray-500 text-xl mb-12 leading-relaxed" }, "components": [{ "type": "text", "content": "Compila il modulo e ti risponderemo entro 24 ore. La prima consulenza è sempre gratuita." }] },
+                      {
+                        "tagName": "form",
+                        "attributes": { "class": "space-y-6 bg-white p-10 rounded-2xl shadow-sm" },
+                        "components": [
+                          {
+                            "tagName": "div",
+                            "attributes": { "class": "grid grid-cols-1 md:grid-cols-2 gap-6" },
+                            "components": [
+                              { "tagName": "div", "components": [
+                                { "tagName": "label", "attributes": { "class": "block text-sm font-bold text-gray-700 mb-2" }, "components": [{ "type": "text", "content": "Nome" }] },
+                                { "tagName": "input", "attributes": { "type": "text", "placeholder": "Mario Rossi", "class": "w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors" } }
+                              ]},
+                              { "tagName": "div", "components": [
+                                { "tagName": "label", "attributes": { "class": "block text-sm font-bold text-gray-700 mb-2" }, "components": [{ "type": "text", "content": "Email" }] },
+                                { "tagName": "input", "attributes": { "type": "email", "placeholder": "mario@azienda.it", "class": "w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors" } }
+                              ]}
+                            ]
+                          },
+                          { "tagName": "div", "components": [
+                            { "tagName": "label", "attributes": { "class": "block text-sm font-bold text-gray-700 mb-2" }, "components": [{ "type": "text", "content": "Azienda" }] },
+                            { "tagName": "input", "attributes": { "type": "text", "placeholder": "Nome Azienda SRL", "class": "w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors" } }
+                          ]},
+                          { "tagName": "div", "components": [
+                            { "tagName": "label", "attributes": { "class": "block text-sm font-bold text-gray-700 mb-2" }, "components": [{ "type": "text", "content": "Messaggio" }] },
+                            { "tagName": "textarea", "attributes": { "rows": "5", "placeholder": "Raccontaci del tuo progetto...", "class": "w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors resize-none" } }
+                          ]},
+                          { "tagName": "button", "attributes": { "type": "submit", "class": "w-full bg-primary text-gray-900 font-bold py-4 rounded-xl hover:opacity-90 transition-opacity" }, "components": [{ "type": "text", "content": "Invia il messaggio" }] }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": {
+            "title": "Contatti — La Tua Azienda",
+            "description": "Contattaci per una consulenza gratuita.",
+            "ogTitle": "Contatti",
+            "ogDescription": "Scrivici per una consulenza gratuita.",
+            "ogImage": "",
+            "canonical": "",
+            "robots": "index"
+          },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    }
+  ]
+}

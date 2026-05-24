@@ -1,0 +1,276 @@
+{
+  "version": "3.0.0",
+  "name": "Ristorante & Locale",
+  "created": "2026-05-24T10:00:00.000Z",
+  "updated": "2026-05-24T10:00:00.000Z",
+  "globalSettings": {
+    "primaryColor": "#C9A84C",
+    "secondaryColor": "#1a1208",
+    "fontHeading": "'Playfair Display', serif",
+    "fontBody": "'Inter', sans-serif",
+    "favicon": "",
+    "tokenPrimary": "#C9A84C",
+    "typographyBase": 16,
+    "typographyRatio": 1.333,
+    "fontPairId": null,
+    "temiSalvati": []
+  },
+  "layouts": [
+    {
+      "id": "layout-standard",
+      "nome": "Standard",
+      "zone": {
+        "header": { "components": [], "styles": {} },
+        "footer": { "components": [], "styles": {} }
+      },
+      "menu": []
+    }
+  ],
+  "cartelle": [],
+  "assets": [],
+  "ftpProfiles": [],
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "slug": "index",
+      "order": 0,
+      "folderId": null,
+      "layoutId": null,
+      "seo": {
+        "title": "Ristorante Da Marco — Cucina Italiana a Milano",
+        "description": "Ristorante di cucina italiana nel cuore di Milano. Prenota il tuo tavolo.",
+        "ogTitle": "Ristorante Da Marco",
+        "ogDescription": "Cucina italiana autentica a Milano.",
+        "ogImage": "",
+        "canonical": "",
+        "robots": "index"
+      },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" },
+      "gsapTimeline": [],
+      "variantiAB": [],
+      "variantiLingua": {
+        "it": {
+          "gjsData": {
+            "components": [
+              {
+                "tagName": "header",
+                "attributes": { "class": "absolute top-0 left-0 right-0 z-50 py-6 px-8 flex items-center justify-between" },
+                "components": [
+                  { "tagName": "div", "attributes": { "class": "font-heading text-white text-2xl font-bold italic" }, "components": [{ "type": "text", "content": "Da Marco" }] },
+                  { "tagName": "nav", "attributes": { "class": "hidden md:flex gap-8 text-white/80 text-sm font-medium" }, "components": [
+                    { "tagName": "a", "attributes": { "href": "#menu", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "Il Menù" }] },
+                    { "tagName": "a", "attributes": { "href": "#storia", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "La Storia" }] },
+                    { "tagName": "a", "attributes": { "href": "#prenota", "class": "hover:text-primary transition-colors" }, "components": [{ "type": "text", "content": "Prenota" }] }
+                  ]},
+                  { "tagName": "a", "attributes": { "href": "#prenota", "class": "bg-primary text-gray-900 font-bold px-5 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity" }, "components": [{ "type": "text", "content": "Prenota un tavolo" }] }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "class": "relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden" },
+                "components": [
+                  { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1600", "alt": "Atmosfera ristorante", "class": "absolute inset-0 w-full h-full object-cover" } },
+                  { "tagName": "div", "attributes": { "class": "absolute inset-0 bg-gray-950/60" } },
+                  { "tagName": "div", "attributes": { "class": "relative z-10 max-w-4xl mx-auto px-6" }, "components": [
+                    { "tagName": "p", "attributes": { "class": "text-primary font-medium tracking-[0.4em] uppercase text-sm mb-6" }, "components": [{ "type": "text", "content": "Dal 1985 · Milano" }] },
+                    { "tagName": "h1", "attributes": { "class": "text-6xl md:text-8xl font-heading font-bold italic mb-8 leading-tight" }, "components": [{ "type": "text", "content": "Dove il gusto incontra la tradizione" }] },
+                    { "tagName": "p", "attributes": { "class": "text-white/70 text-xl mb-12 max-w-2xl mx-auto" }, "components": [{ "type": "text", "content": "Ricette di famiglia, ingredienti freschi di stagione, e l'accoglienza di sempre nel cuore di Milano." }] },
+                    { "tagName": "div", "attributes": { "class": "flex flex-col sm:flex-row gap-4 justify-center" }, "components": [
+                      { "tagName": "a", "attributes": { "href": "#prenota", "class": "bg-primary text-gray-900 font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity" }, "components": [{ "type": "text", "content": "Prenota ora" }] },
+                      { "tagName": "a", "attributes": { "href": "#menu", "class": "border border-white/30 text-white font-medium px-8 py-4 rounded-lg hover:border-primary hover:text-primary transition-all" }, "components": [{ "type": "text", "content": "Scopri il menù" }] }
+                    ]}
+                  ]},
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "absolute bottom-10 left-0 right-0 flex justify-center gap-16 text-white/60 text-sm" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "text-center" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "text-2xl font-heading font-bold text-primary mb-1" }, "components": [{ "type": "text", "content": "40+" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xs uppercase tracking-widest" }, "components": [{ "type": "text", "content": "Anni di storia" }] }
+                      ]},
+                      { "tagName": "div", "attributes": { "class": "text-center" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "text-2xl font-heading font-bold text-primary mb-1" }, "components": [{ "type": "text", "content": "80" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xs uppercase tracking-widest" }, "components": [{ "type": "text", "content": "Coperti" }] }
+                      ]},
+                      { "tagName": "div", "attributes": { "class": "text-center" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "text-2xl font-heading font-bold text-primary mb-1" }, "components": [{ "type": "text", "content": "★ 4.9" }] },
+                        { "tagName": "div", "attributes": { "class": "text-xs uppercase tracking-widest" }, "components": [{ "type": "text", "content": "Su Google" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "menu", "class": "py-24 bg-[#1a1208] text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-5xl mx-auto px-6" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "text-center mb-16" }, "components": [
+                        { "tagName": "p", "attributes": { "class": "text-primary text-sm uppercase tracking-[0.3em] mb-4" }, "components": [{ "type": "text", "content": "Stagionale" }] },
+                        { "tagName": "h2", "attributes": { "class": "text-5xl font-heading font-bold italic mb-4" }, "components": [{ "type": "text", "content": "Il nostro menù" }] },
+                        { "tagName": "div", "attributes": { "class": "w-16 h-px bg-primary mx-auto" } }
+                      ]},
+                      {
+                        "tagName": "div",
+                        "attributes": { "class": "grid grid-cols-1 md:grid-cols-2 gap-16" },
+                        "components": [
+                          {
+                            "tagName": "div",
+                            "components": [
+                              { "tagName": "h3", "attributes": { "class": "text-primary text-xs uppercase tracking-[0.3em] mb-8 font-sans font-bold" }, "components": [{ "type": "text", "content": "Primi piatti" }] },
+                              { "tagName": "div", "attributes": { "class": "space-y-6" }, "components": [
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Tagliolini al tartufo nero" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Pasta fresca, tartufo di Norcia, burro aromatico" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€22" }] }
+                                ]},
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Risotto alla milanese" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Riso Carnaroli, zafferano DOP, Parmigiano 36 mesi" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€18" }] }
+                                ]},
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Pappardelle al ragù di cinghiale" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Pasta larga all'uovo, cinghiale toscano, pomodoro" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€20" }] }
+                                ]}
+                              ]}
+                            ]
+                          },
+                          {
+                            "tagName": "div",
+                            "components": [
+                              { "tagName": "h3", "attributes": { "class": "text-primary text-xs uppercase tracking-[0.3em] mb-8 font-sans font-bold" }, "components": [{ "type": "text", "content": "Secondi piatti" }] },
+                              { "tagName": "div", "attributes": { "class": "space-y-6" }, "components": [
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Ossobuco alla milanese" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Vitello, gremolata, risotto allo zafferano" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€32" }] }
+                                ]},
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Tagliata di Chianina" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Rucola, Parmigiano, aceto balsamico di Modena" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€38" }] }
+                                ]},
+                                { "tagName": "div", "attributes": { "class": "flex justify-between items-baseline border-b border-white/10 pb-4" }, "components": [
+                                  { "tagName": "div", "components": [
+                                    { "tagName": "h4", "attributes": { "class": "font-heading text-lg italic mb-1" }, "components": [{ "type": "text", "content": "Branzino al sale" }] },
+                                    { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Branzino intero, erbe aromatiche, limone di Sicilia" }] }
+                                  ]},
+                                  { "tagName": "span", "attributes": { "class": "text-primary font-bold whitespace-nowrap ml-4" }, "components": [{ "type": "text", "content": "€35" }] }
+                                ]}
+                              ]}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "storia", "class": "py-24 bg-gray-50" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center" },
+                    "components": [
+                      { "tagName": "div", "attributes": { "class": "relative" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl" }, "components": [
+                          { "tagName": "img", "attributes": { "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800", "alt": "Il ristorante", "class": "w-full h-full object-cover" } }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl shadow-xl" }, "components": [
+                          { "tagName": "div", "attributes": { "class": "text-4xl font-heading font-bold italic text-gray-900" }, "components": [{ "type": "text", "content": "1985" }] },
+                          { "tagName": "div", "attributes": { "class": "text-gray-900/70 text-sm font-bold mt-1" }, "components": [{ "type": "text", "content": "Anno di fondazione" }] }
+                        ]}
+                      ]},
+                      { "tagName": "div", "components": [
+                        { "tagName": "p", "attributes": { "class": "text-primary font-bold text-sm uppercase tracking-[0.3em] mb-6" }, "components": [{ "type": "text", "content": "La nostra storia" }] },
+                        { "tagName": "h2", "attributes": { "class": "text-5xl font-heading font-bold italic text-gray-900 mb-8 leading-tight" }, "components": [{ "type": "text", "content": "Quarant'anni di passione e sapori autentici" }] },
+                        { "tagName": "p", "attributes": { "class": "text-gray-600 text-lg leading-relaxed mb-6" }, "components": [{ "type": "text", "content": "Tutto è iniziato con una piccola trattoria e le ricette di nonna Rosa. Oggi, dopo quarant'anni, portiamo ancora in tavola quegli stessi sapori genuini, con ingredienti freschi selezionati ogni mattina." }] },
+                        { "tagName": "p", "attributes": { "class": "text-gray-600 text-lg leading-relaxed" }, "components": [{ "type": "text", "content": "Marco, terza generazione di ristoratori, crede che il cibo migliore sia quello fatto con cura, senza fretta e con il rispetto per la tradizione." }] }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "section",
+                "attributes": { "id": "prenota", "class": "py-24 bg-[#1a1208] text-white" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-2xl mx-auto px-6 text-center" },
+                    "components": [
+                      { "tagName": "h2", "attributes": { "class": "text-5xl font-heading font-bold italic mb-4" }, "components": [{ "type": "text", "content": "Prenota il tuo tavolo" }] },
+                      { "tagName": "p", "attributes": { "class": "text-white/60 mb-12" }, "components": [{ "type": "text", "content": "Siamo aperti tutti i giorni a pranzo e cena. Per gruppi superiori a 8 persone, chiamaci direttamente." }] },
+                      { "tagName": "form", "attributes": { "class": "space-y-4" }, "components": [
+                        { "tagName": "div", "attributes": { "class": "grid grid-cols-2 gap-4" }, "components": [
+                          { "tagName": "input", "attributes": { "type": "text", "placeholder": "Nome e cognome", "class": "w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-primary" } },
+                          { "tagName": "input", "attributes": { "type": "tel", "placeholder": "Telefono", "class": "w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 text-sm focus:outline-none focus:border-primary" } }
+                        ]},
+                        { "tagName": "div", "attributes": { "class": "grid grid-cols-2 gap-4" }, "components": [
+                          { "tagName": "input", "attributes": { "type": "date", "class": "w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-primary" } },
+                          { "tagName": "select", "attributes": { "class": "w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-primary" }, "components": [
+                            { "tagName": "option", "attributes": { "value": "2" }, "components": [{ "type": "text", "content": "2 persone" }] },
+                            { "tagName": "option", "attributes": { "value": "4" }, "components": [{ "type": "text", "content": "4 persone" }] },
+                            { "tagName": "option", "attributes": { "value": "6" }, "components": [{ "type": "text", "content": "6 persone" }] },
+                            { "tagName": "option", "attributes": { "value": "8" }, "components": [{ "type": "text", "content": "8+ persone" }] }
+                          ]}
+                        ]},
+                        { "tagName": "button", "attributes": { "type": "submit", "class": "w-full bg-primary text-gray-900 font-bold py-4 rounded-xl hover:opacity-90 transition-opacity" }, "components": [{ "type": "text", "content": "Conferma prenotazione" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              },
+              {
+                "tagName": "footer",
+                "attributes": { "class": "bg-gray-950 text-white py-12 px-6" },
+                "components": [
+                  {
+                    "tagName": "div",
+                    "attributes": { "class": "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left" },
+                    "components": [
+                      { "tagName": "div", "components": [
+                        { "tagName": "div", "attributes": { "class": "font-heading text-2xl font-bold italic text-primary mb-4" }, "components": [{ "type": "text", "content": "Da Marco" }] },
+                        { "tagName": "p", "attributes": { "class": "text-white/50 text-sm" }, "components": [{ "type": "text", "content": "Cucina italiana autentica dal 1985." }] }
+                      ]},
+                      { "tagName": "div", "components": [
+                        { "tagName": "h4", "attributes": { "class": "font-bold text-xs uppercase tracking-widest text-white/50 mb-4" }, "components": [{ "type": "text", "content": "Dove siamo" }] },
+                        { "tagName": "p", "attributes": { "class": "text-white/70 text-sm" }, "components": [{ "type": "text", "content": "Via della Spiga 12\nMilano, 20121" }] }
+                      ]},
+                      { "tagName": "div", "components": [
+                        { "tagName": "h4", "attributes": { "class": "font-bold text-xs uppercase tracking-widest text-white/50 mb-4" }, "components": [{ "type": "text", "content": "Orari" }] },
+                        { "tagName": "p", "attributes": { "class": "text-white/70 text-sm" }, "components": [{ "type": "text", "content": "Lun–Ven: 12:00–14:30 / 19:00–22:30\nSab–Dom: 12:00–15:00 / 19:00–23:00" }] }
+                      ]}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "styles": [],
+            "assets": []
+          },
+          "seo": { "title": "Home — Ristorante Da Marco", "description": "Cucina italiana a Milano.", "ogTitle": "Da Marco", "ogDescription": "Cucina italiana autentica.", "ogImage": "", "canonical": "", "robots": "index" },
+          "customCode": { "head": "", "bodyEnd": "", "css": "" }
+        }
+      }
+    }
+  ]
+}

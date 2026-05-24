@@ -1,143 +1,241 @@
 # CÀNONE Template Community
 
-Template pronti per [CÀNONE Studio](https://github.com/marcozeus/canone) — il visual builder desktop per siti statici professionali.
+Ready-to-use templates for [CÀNONE Studio](https://github.com/marcozeus/canone) — the desktop visual builder for professional static websites.
 
-Ogni template è un file `.canone` che si apre direttamente nell'app: zero setup, zero dipendenze, zero abbonamenti.
-
----
-
-## Template disponibili
-
-| Template | Categoria | Pagine |
-|----------|-----------|--------|
-| **Business Starter** | business | Home, Contatti |
-| **Portfolio Creativo** | portfolio | Home, Lavori, Contatti |
-| **Landing Conversion** | landing | Pagina singola |
-| **Ristorante & Locale** | business | Home (menù, prenotazioni, storia) |
-| **Blog Minimal** | blog | Home, Chi Sono |
-
-Scaricabili direttamente dalla HomeScreen di CÀNONE → pulsante **TEMPLATE COMMUNITY**.
+Every template is a `.canone` file that opens directly in the app: zero setup, zero dependencies, zero subscriptions.
 
 ---
 
-## Struttura del repository
+## Available templates
+
+| Template | Category | Pages |
+|----------|----------|-------|
+| **Business Starter** | business | Home, Contacts |
+| **Portfolio Creativo** | portfolio | Home, Works, Contacts |
+| **Landing Conversion** | landing | Single page |
+| **Ristorante & Locale** | business | Home (menu, reservations, story) |
+| **Blog Minimal** | blog | Home, About |
+
+Downloadable directly from the CÀNONE HomeScreen → **TEMPLATE COMMUNITY** button.
+
+---
+
+## Repository structure
 
 ```
-index.json                          ← indice letto dall'app ogni 24h (cache localStorage)
+index.json                          ← index read by the app every 24h (localStorage cache)
 templates/
-  <slug-template>/
-    progetto.canone                 ← file progetto (JSON, rinominabile)
-    preview.jpg                     ← anteprima 1200×800px (obbligatoria per PR esterne)
+  <template-slug>/
+    progetto.canone                 ← project file (JSON)
+    preview.jpg                     ← preview image 1200×800px (required for external PRs)
 ```
 
 ---
 
-## Contribuire un template
+## Contributing a template
 
-Hai creato un template con CÀNONE e vuoi condividerlo con la community? Benvenuto.
+Built something great in CÀNONE Studio and want to share it? Welcome.
 
-### 1. Crea il tuo template in CÀNONE Studio
+### 1. Build your template in CÀNONE Studio
 
-Costruisci il tuo sito come sempre nell'editor. Usa blocchi della libreria, immagini da Unsplash o placeholder, testi credibili (non solo "Lorem ipsum"). Quando sei soddisfatto, salva il file `.canone`.
+Design your site as usual in the editor. Use library blocks, Unsplash images or SVG placeholders, and credible placeholder text (not just "Lorem ipsum everywhere"). When you're happy with it, save the `.canone` file.
 
-### 2. Prepara i file
+### 2. Prepare the files
 
 ```
 templates/
-  nome-del-tuo-template/
-    progetto.canone     ← il file salvato da CÀNONE Studio
-    preview.jpg         ← screenshot 1200×800px (usa il tuo browser, strumento Stampa → Salva PDF → converti)
+  your-template-name/
+    progetto.canone     ← the file saved from CÀNONE Studio
+    preview.jpg         ← screenshot 1200×800px
 ```
 
-### 3. Aggiorna index.json
+### 3. Update index.json
 
-Aggiungi la tua voce all'array `templates`:
+Add your entry to the `templates` array:
 
 ```json
 {
-  "id": "nome-del-tuo-template",
-  "nome": "Nome Leggibile",
-  "descrizione": "Una frase che descrive cosa fa il template (max 120 caratteri).",
+  "id": "your-template-slug",
+  "nome": "Your Template Name",
+  "descrizione": "One sentence describing the template (max 120 characters).",
   "categoria": "business",
-  "autore": "Il Tuo Nome",
+  "autore": "Your Name",
   "badge": null,
-  "preview": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/nome-del-tuo-template/preview.jpg",
-  "rawUrl": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/nome-del-tuo-template/progetto.canone"
+  "preview": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/your-template-slug/preview.jpg",
+  "rawUrl": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/your-template-slug/progetto.canone"
 }
 ```
 
-### 4. Apri una Pull Request
+### 4. Open a Pull Request
 
-Titolo: `Template: Nome Leggibile [categoria]`
+Title: `Template: Your Template Name [category]`
 
-Descrizione: breve spiegazione del template, per chi è pensato, cosa contiene.
+Description: brief explanation of the template, who it's for, what it contains.
 
 ---
 
-## Regole di accettazione
+## `.canone` file schema
 
-**Contenuto**
-- Il template deve aprirsi correttamente in CÀNONE Studio 3.0+
-- Testi placeholder credibili (non solo "Lorem ipsum ovunque")
-- Immagini solo da CDN approvati: Unsplash (`images.unsplash.com`), placeholder SVG inline
-- Categoria obbligatoria tra: `business` `portfolio` `landing` `blog` `ecommerce` `evento`
+The `.canone` file is JSON. CÀNONE Studio accepts both **English keys** (recommended for community templates) and Italian keys. Use English — it's the official schema for this repo.
 
-**Codice e dipendenze**
-- CDN esterni solo se già nel whitelist CÀNONE: GSAP, Google Fonts, Tailwind CDN
-- Form solo verso: Web3Forms, Mailchimp, Brevo — nessun backend proprietario
-- Nessuna chiamata a API esterne che richiedano autenticazione
-- File `.canone` < 5MB, immagini base64 < 2MB totali
+### Root object
+
+```json
+{
+  "version": "3.0.0",
+  "name": "Your Site Name",
+  "created": "2026-01-01T00:00:00.000Z",
+  "updated": "2026-01-01T00:00:00.000Z",
+  "globalSettings": { ... },
+  "layouts": [ ... ],
+  "folders": [],
+  "assets": [],
+  "pages": [ ... ]
+}
+```
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `version` | string | Always `"3.0.0"` |
+| `name` | string | Project name shown in the app |
+| `globalSettings` | object | Colors, typography, tokens — see below |
+| `layouts` | array | Layout templates (header/footer zones) |
+| `folders` | array | Page folders — leave `[]` for flat structure |
+| `assets` | array | Downloadable files (PDF, ZIP…) — usually `[]` |
+| `pages` | array | Pages — see below |
+
+### `globalSettings`
+
+```json
+{
+  "primaryColor": "#C9A84C",
+  "secondaryColor": "#1a1a2e",
+  "fontHeading": "'Montserrat', sans-serif",
+  "fontBody": "'Inter', sans-serif",
+  "favicon": "",
+  "tokenPrimary": "#C9A84C",
+  "typographyBase": 16,
+  "typographyRatio": 1.333,
+  "fontPairId": null,
+  "temiSalvati": []
+}
+```
+
+### `layouts`
+
+Always include at least the Standard layout (id `"layout-standard"`):
+
+```json
+[
+  {
+    "id": "layout-standard",
+    "nome": "Standard",
+    "zone": {
+      "header": { "components": [], "styles": {} },
+      "footer": { "components": [], "styles": {} }
+    },
+    "menu": []
+  }
+]
+```
+
+### `pages` — each page
+
+```json
+{
+  "id": "page-home",
+  "name": "Home",
+  "slug": "index",
+  "order": 0,
+  "folderId": null,
+  "layoutId": null,
+  "seo": {
+    "title": "Page Title",
+    "description": "Meta description.",
+    "ogTitle": "OG Title",
+    "ogDescription": "OG Description.",
+    "ogImage": "",
+    "canonical": "",
+    "robots": "index"
+  },
+  "customCode": { "head": "", "bodyEnd": "", "css": "" },
+  "gsapTimeline": [],
+  "variantiAB": [],
+  "variantiLingua": {
+    "it": {
+      "gjsData": {
+        "components": [ ... ],
+        "styles": [],
+        "assets": []
+      },
+      "seo": { ... },
+      "customCode": { "head": "", "bodyEnd": "", "css": "" }
+    }
+  }
+}
+```
+
+| Field | Type | Notes |
+|-------|------|-------|
+| `slug` | string | `"index"` for the homepage, kebab-case for others |
+| `order` | number | Determines page order in the sidebar (0-based) |
+| `folderId` | string\|null | `null` = root level |
+| `layoutId` | string\|null | `null` = inherits from folder or Standard layout |
+| `variantiLingua` | object | Keys are language codes (`"it"`, `"en"`, …). At least `"it"` required. |
+| `gjsData.components` | array | GrapesJS component tree |
+
+### Language support
+
+If your template supports multiple languages, add them to `variantiLingua`:
+
+```json
+"variantiLingua": {
+  "it": { "gjsData": { ... }, "seo": { ... }, "customCode": { ... } },
+  "en": { "gjsData": { ... }, "seo": { ... }, "customCode": { ... } }
+}
+```
+
+---
+
+## Acceptance rules
+
+**Content**
+- Template must open correctly in CÀNONE Studio 3.0+
+- Credible placeholder text (not just "Lorem ipsum everywhere")
+- Images only from approved CDNs: Unsplash (`images.unsplash.com`), inline SVG placeholders
+- Category must be one of: `business` `portfolio` `landing` `blog` `ecommerce` `evento`
+
+**Code and dependencies**
+- External CDNs only from the CÀNONE whitelist: GSAP, Google Fonts, Tailwind CDN
+- Forms only via: Web3Forms, Mailchimp, Brevo — no proprietary backends
+- No calls to external APIs that require authentication
+- `.canone` file < 5MB, base64 images < 2MB total
 
 **Preview**
-- JPG o PNG, 1200×800px minimo
-- Deve mostrare la Home del template (non una pagina interna)
-- Nessun watermark, nessun logo personale in evidenza nell'immagine
+- JPG or PNG, minimum 1200×800px
+- Must show the Home page (not an internal page)
+- No watermarks, no personal logo prominently visible in the image
 
-**Licenza**
-- Contribuendo accetti che il tuo template sia distribuito sotto licenza MIT
-- Il tuo nome rimane nell'array `autore` a tempo indeterminato
-
----
-
-## Schema completo index.json
-
-```json
-{
-  "versione": "1",
-  "aggiornato": "YYYY-MM-DD",
-  "templates": [
-    {
-      "id": "slug-kebab-case",
-      "nome": "Nome Leggibile",
-      "descrizione": "Descrizione breve (max 120 caratteri).",
-      "categoria": "business | portfolio | landing | blog | ecommerce | evento",
-      "autore": "Nome Autore o Team",
-      "badge": "nuovo | popolare | premium | null",
-      "preview": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/<slug>/preview.jpg",
-      "rawUrl": "https://raw.githubusercontent.com/marcozeus/canone-templates/main/templates/<slug>/progetto.canone"
-    }
-  ]
-}
-```
-
-Il campo `badge` è assegnato dal maintainer — non includerlo nelle PR esterne o mettilo a `null`.
+**License**
+- By contributing you agree your template is distributed under the MIT license
+- Your name stays in the `autore` field permanently
 
 ---
 
-## Domande frequenti
+## FAQ
 
-**Posso usare immagini reali dei miei clienti?**
-No. Usa immagini da Unsplash (licenza libera) o placeholder grafici. Le immagini dei clienti non devono finire in un repo pubblico.
+**Can I use real client images?**
+No. Use Unsplash images (free license) or graphic placeholders. Client images must not end up in a public repo.
 
-**Il template può avere più lingue?**
-Sì, CÀNONE supporta multi-lingua. Includi tutte le varianti che vuoi.
+**Can the template have multiple languages?**
+Yes, CÀNONE supports multi-language. Include as many language variants as you want in `variantiLingua`.
 
-**Posso fare un template "premium" che vendo altrove?**
-I template in questo repo sono liberi per tutti. Se vuoi vendere template premium, aspetta la release di CÀNONE Pro (in arrivo) dove ci sarà un canale dedicato.
+**Can I make a "premium" template I sell elsewhere?**
+Templates in this repo are free for everyone. If you want to sell premium templates, wait for the CÀNONE Pro release (coming soon) where there will be a dedicated channel.
 
-**Il badge "premium" o "popolare" lo posso mettere io?**
-No, li assegna il maintainer in base ai download e alla qualità.
+**Can I set the "premium" or "popular" badge myself?**
+No, badges are assigned by the maintainer based on downloads and quality.
 
 ---
 
-*Creato e mantenuto dal CÀNONE Team. Issues e suggerimenti benvenuti.*
+*Created and maintained by the CÀNONE Team. Issues and suggestions welcome.*
